@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwenli.dao.UserMapper">
+<!--    namespace绑定一个UserMapper接口,就是只写抽象函数的那个接口，这个UserMapper.xml文件绑定那个UserMapper.这就相当于实现了UserMapper的接口一样-->
+
+
+    <select id="selectUserById" resultType="com.liwenli.pojo.User">
+       select * from user where id = #{id}
+   </select>
+
+    <select id="selectUserById2" parameterType="java.util.Map" resultType="java.lang.Integer">
+<!--这个查询的例子是错误的！-->
+       select * from user where id = #{id} and name = #{name}
+   </select>
+
+    <insert id="addUser" parameterType="com.liwenli.pojo.User">
+    insert into user (id,name,pwd) values (#{id},#{name},#{pwd})
+</insert>
+
+    <insert id="addUser2" parameterType="java.util.Map">
+<!--总结：如果参数过多，我们可以考虑直接使用Map实现，如果参数比较少，直接传递参数即可-->
+
+    insert into user (id,name,pwd) values (#{id},#{name},#{pwd})
+</insert>
+
+
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwenli.dao.BlogMapper">
+
+    <insert id="addBlog" parameterType="blog">
+           insert into blog (id, title, author, create_time, views)
+           values (#{id},#{title},#{author},#{createTime},#{views});
+    </insert>
+
+
+
+    <!--需求1：
+根据作者名字和博客名字来查询博客！
+如果作者名字为空，那么只根据博客名字查询，反之，则根据作者名来查询
+select * from blog where title = #{title} and author = #{author}
+-->
+    <select id="queryBlogIf" parameterType="map" resultType="blog">
+        select * from blog where 1=1
+        <!-- "where 1=1" 用来保证永远都能查到东西 相当于"where true"-->
+        <if test="title != null">
+            and title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </select>
+
+</mapper>

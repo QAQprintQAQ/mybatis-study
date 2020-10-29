@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwenli.dao.UserMapper">
+    <!--是namespace="com.liwenli.dao.UserMapper" 而不是namespace="com/liwenli/dao/UserMapper"-->
+
+    <select id="getUserList" resultType="user">
+    <!-- id对应于UserMapper中的getUserList方法名 resultType对应于getUserList中返回的类名,user是"com.liwenli.pojo.User的别名-->
+
+    select * from user
+
+  </select>
+</mapper>

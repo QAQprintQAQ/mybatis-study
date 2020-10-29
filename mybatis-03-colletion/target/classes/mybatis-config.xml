@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="db.properties"/>
+<!--    导入数据库的配置文件-->
+
+    <settings>
+        <!--        实现LOG4J-->
+
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+<typeAliases>
+<!--    通过扫描包起别名,别名为对应类的首字母小写形式-->
+    <package name="com.liwenli.pojo"/>
+
+</typeAliases>
+
+    <environments default="development">
+<!--        有两套环境，可以通过默认环境更改环境，一下对应于两种环境的方式，一种是通过配置文件db.propeties文件导入，另外一种就是直接通过写在mybatis-config.xml的直接命名中-->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+<!--                '&'需要用'&amp;'转义一下-->
+                <property name="username" value="liwenli"/>
+                <property name="password" value="liwenli"/>
+            </dataSource>
+        </environment>
+
+
+    </environments>
+
+    <mappers>
+        <mapper resource="com/liwenli/dao/TeacherMapper.xml"/>
+        <mapper resource="com/liwenli/dao/StudentMapper.xml"/>
+
+    </mappers>
+</configuration>

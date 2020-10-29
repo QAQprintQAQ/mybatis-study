@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-04-activeSQL" />
+        <module name="mybatis-04-trim" />
+        <module name="mybatis-02-log" />
+        <module name="mybatis-04-IF" />
+        <module name="mybatis-02-limit" />
+        <module name="mybatis-02-resultmap" />
+        <module name="mybatis-01-crud" />
+        <module name="mybatis-03-colletion" />
+        <module name="mybatis-01-like" />
+        <module name="mybatis-03-anno" />
+        <module name="mybatis-03-association" />
+        <module name="mybatis-01-map" />
+        <module name="mybatis-02-config" />
+        <module name="mybatis-01-base" />
+        <module name="mybatis-03-aocomplex" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="mybatis-02-log4j" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mybatis-01-base" options="" />
+    </option>
+  </component>
+</project>

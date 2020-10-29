@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwenli.dao.BlogMapper">
+
+    <insert id="addBlog" parameterType="blog">
+           insert into blog (id, title, author, create_time, views)
+           values (#{id},#{title},#{author},#{createTime},#{views});
+    </insert>
+
+
+
+    <!--需求1：
+根据作者名字和博客名字来查询博客！
+如果作者名字为空，那么只根据博客名字查询，反之，则根据作者名来查询
+select * from blog where title = #{title} and author = #{author}
+-->
+    <select id="queryBlogIf" parameterType="map" resultType="blog">
+        select * from blog
+        <where>
+        <!--
+        “where”标签会知道如果它包含的标签中有返回值的话，它就插入一个‘where’。
+        此外，如果标签返回的内容是以AND 或OR 开头的，则它会剔除掉。
+        如果条件一为真,即title有值,则该下面语句等价于 select * from blog where title=#{title}
+        如果条件一为假，二为真,即title没有值，author有值。则下面sql等价于 select * from blog where author=#{author}
+"
+        -->
+
+
+            <if test="title != null">
+                title = #{title}
+            </if>
+            <if test="author != null">
+                and author = #{author}
+            </if>
+        </where>
+
+    </select>
+
+
+
+    <select id="queryBlogChoose" parameterType="map" resultType="blog">
+        select * from blog
+        <where>
+            <choose>
+                <when test="title != null">
+                    title = #{title}
+                </when>
+                <when test="author != null">
+                    and author = #{author}
+                </when>
+                <otherwise>
+                    and views = #{views}
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <update id="updateBlog" parameterType="java.util.Map">
+        update blog
+        <set>
+        <!--
+        set标签去除最后一个语句的","号
+        如果不修改views,则"author=#{author},"末尾不应该有","。
+        这时候就需要set标签将末尾的这条修改语句的","删掉
+        update blog set  title = #{title}, author = #{author} where id =#{id}
+        如果第一个title不要修改,则变为 update blog set author = #{author} where id =#{id}
+        -->
+            <if test="title != null">
+                title = #{title},
+
+            </if>
+
+            <if test="author != null">
+                author = #{author},
+
+            </if>
+
+            <if test="views != null">
+                views = #{views}
+
+            </if>
+
+        </set>
+
+        where id = #{id};
+
+    </update>
+
+</mapper>

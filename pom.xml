@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+<!--    创建父工程-->
+    <groupId>com.liwenli</groupId>
+    <artifactId>mybatis-study</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>mybatis-01-crud</module>
+        <module>mybatis-01-base</module>
+        <module>mybatis-01-map</module>
+        <module>mybatis-01-like</module>
+        <module>mybatis-02-config</module>
+        <module>mybatis-02-resultmap</module>
+        <module>mybatis-02-log</module>
+        <module>mybatis-02-limit</module>
+        <module>mybatis-03-anno</module>
+        <module>mybatis-03-association</module>
+        <module>mybatis-03-aocomplex</module>
+        <module>mybatis-03-colletion</module>
+        <module>mybatis-04-activeSQL</module>
+        <module>mybatis-04-IF</module>
+        <module>mybatis-04-trim</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+
+
+    <!--    导入依赖坐标-->
+    <dependencies>
+
+<!--        导入mybatis依赖坐标-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.5</version>
+
+        </dependency>
+
+<!--        导入mysql的依赖坐标-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
+        </dependency>
+
+
+<!--        导入junit依赖坐标，用来测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>test</scope>
+        </dependency>
+<!--导入log4j的依赖坐标，用来看日志-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+
+<!--        导入了相关依赖之后，有些依赖显示红色证明是没有相关的包，我们刷新下maven就会自动帮我们下载相关依赖了！-->
+
+    </dependencies>
+
+
+   <build>
+       <resources>
+           <resource>
+               <directory>src/main/java</directory>
+               <includes>
+                   <include>**/*.properties</include>
+                   <include>**/*.xml</include>
+               </includes>
+               <filtering>false</filtering>
+           </resource>
+           <resource>
+               <directory>src/main/resources</directory>
+               <includes>
+                   <include>**/*.properties</include>
+                   <include>**/*.xml</include>
+               </includes>
+               <filtering>false</filtering>
+           </resource>
+       </resources>
+   </build>
+
+
+</project>

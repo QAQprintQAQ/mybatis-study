@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwenli.dao.UserMapper">
+    <!--是namespace="com.liwenli.dao.UserMapper" 而不是namespace="com/liwenli/dao/UserMapper"-->
+
+
+
+
+
+<!--    <select id="selectUserByLimit" resultType="com.liwenli.pojo.User" parameterType="java.util.Map">-->
+<!--        &lt;!&ndash; id对应于UserMapper中的getUserList方法名 resultType对应于getUserList中返回的类名,user是"com.liwenli.pojo.User的别名&ndash;&gt;-->
+
+<!--        select * from user limit #{startIndex},#{pageSize};-->
+
+
+<!--    </select>-->
+
+
+
+
+
+
+    <resultMap id="UserMap" type="user">
+        <id column="id" property="id"/>
+        <id column="name" property="name"/>
+        <id column="pwd" property="pwd"/>
+    </resultMap>
+
+    <select id="selectUserByLimit" parameterType="map" resultMap="UserMap">
+        <!--map是java.util.Map的别名,这是mybatis默认的别名,就像Integer的别名是int一样,而基本类型int的别名是_int,这是需要我们注意的-->
+                select * from user limit #{startIndex},#{pageSize};
+
+    </select>
+</mapper>

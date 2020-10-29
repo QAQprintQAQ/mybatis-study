@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwenli.dao.UserMapper">
+<!--    namespace绑定一个UserMapper接口,就是只写抽象函数的那个接口，这个UserMapper.xml文件绑定那个UserMapper.这就相当于实现了UserMapper的接口一样-->
+
+<!--
+
+   <select id="getUserLike" resultType="com.liwenli.pojo.User">
+
+    select * from user where name like #{name};
+
+   </select>
+
+-->
+<!--方式一和二只能配置一个，两个同时配置就会出错！-->
+    <select id="getUserLike" resultType="com.liwenli.pojo.User">
+        <!--方式二-->
+        <!--需要返回类型 resultType="com.liwenli.pojo.User"-->
+        select * from user where name like "%"#{name}"%";
+
+    </select>
+
+
+</mapper>
