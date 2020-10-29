@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae75da32-7f60-4412-a1a1-2e36e14d0639" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iFnwoLAIaITHK0Bqz9KeTx38re" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\imliw\IdeaProjects\mybatis-study\mybatis-04-trim" />
+      <recent name="C:\Users\imliw\IdeaProjects\mybatis-study\mybatis-04-IF" />
+      <recent name="C:\Users\imliw\IdeaProjects\mybatis-study\mybatis-04-activeSQL" />
+      <recent name="C:\Users\imliw\IdeaProjects\mybatis-study\mybatis-03-association\src\test\java\com\liwenli\dao" />
+      <recent name="C:\Users\imliw\IdeaProjects\mybatis-study\mybatis-03-colletion" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserDaoTest.testgetUserList">
+    <configuration name="UserDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liwenli.dao.UserDaoTest" />
+      <module name="mybatis-01-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liwenli.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testQueryBlogChoose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-04-trim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liwenli.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liwenli.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.liwenli.dao.MyTest" />
+      <option name="METHOD_NAME" value="testQueryBlogChoose" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testQueryBlogIf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-04-IF" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liwenli.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liwenli.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.liwenli.dao.MyTest" />
+      <option name="METHOD_NAME" value="testQueryBlogIf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testUpdateBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-04-trim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liwenli.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liwenli.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.liwenli.dao.MyTest" />
+      <option name="METHOD_NAME" value="testUpdateBlog" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.testgetUserList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liwenli.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liwenli.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.liwenli.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="testgetUserList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserDaoTest.testgetUserList" />
+        <item itemvalue="Application.UserDaoTest" />
+        <item itemvalue="JUnit.MyTest.testUpdateBlog" />
+        <item itemvalue="JUnit.MyTest.testQueryBlogChoose" />
+        <item itemvalue="JUnit.MyTest.testQueryBlogIf" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae75da32-7f60-4412-a1a1-2e36e14d0639" name="Default Changelist" comment="" />
+      <created>1601512448956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601512448956</updated>
+      <workItem from="1601512451490" duration="5661000" />
+      <workItem from="1601518177547" duration="3103000" />
+      <workItem from="1601543359248" duration="25000" />
+      <workItem from="1601543414861" duration="44411000" />
+      <workItem from="1601688878375" duration="26532000" />
+      <workItem from="1601986104326" duration="40000" />
+      <workItem from="1601997426562" duration="167000" />
+      <workItem from="1601997916860" duration="61000" />
+      <workItem from="1602062539145" duration="25000" />
+      <workItem from="1602066137361" duration="52000" />
+      <workItem from="1603969523859" duration="695000" />
+      <workItem from="1603970235911" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1601690809550">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1601690809550" />
+    <state x="633" y="60" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601600138627">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="633" y="60" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601600138627" />
+    <state x="510" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601688527654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="510" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601688527654" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601715210609">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601715210609" />
+    <state x="326" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1601710300300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="326" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1601710300300" />
+    <state x="511" y="279" width="513" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601711185956">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="279" width="513" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1601711185956" />
+    <state x="450" y="8" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601708833310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="8" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1601708833310" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601714193715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601714193715" />
+    <state x="549" y="138" key="FileChooserDialogImpl" timestamp="1602062552031">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="138" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602062552031" />
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom" timestamp="1601997977285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601997977285" />
+    <state width="1493" height="148" key="GridCell.Tab.0.center" timestamp="1601997977284">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601997977284" />
+    <state width="1493" height="148" key="GridCell.Tab.0.left" timestamp="1601997977284">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601997977284" />
+    <state width="1493" height="148" key="GridCell.Tab.0.right" timestamp="1601997977285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601997977285" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1601688861860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601688861860" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1601688861860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601688861860" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1601688861860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601688861860" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1601688861860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601688861860" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1601690643642">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601690643642" />
+    <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1601682876354">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1601682876354" />
+    <state x="303" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601698219508">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="303" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1601698219508" />
+    <state x="178" y="72" key="new project wizard" timestamp="1602066185898">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1602066185898" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601715922767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601715922767" />
+  </component>
+</project>
